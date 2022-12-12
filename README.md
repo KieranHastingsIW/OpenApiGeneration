@@ -20,6 +20,7 @@ A guide for creating an API using the OpenApi generator, using a OpenApi spec ya
 If you want to test the passing of the Path variables continue, if not skip to step 3.
 1. in the `CurrentAccountApi.java` class locate the *retrieve* method, edit the content of the exampleString variable to include the currentaccountid parameter.
 - these changes should make the start of the exampleString look like `"{ \"CurrentAccountFacility\" : { \"ProductInstanceReference\" : \"" + currentaccountid + "\",` instead of `"{ \"CurrentAccountFacility\" : { \"ProductInstanceReference\" : \"ProductInstanceReference\",`
-2. Test using the Postman collection given in this repository, the expected body contains a JSON text with `CurrentAccountFacility` as the top most object and all the nested objects having matching key pair values except the `ProductInstanceReference` field which should have the `currentAccountID` defined in the Path Variables as its value. 
-3. Test using the Postman collection given in this repository, the expected body contains a JSON text with `CurrentAccountFacility` as the top most object and all the nested objects having matching key pair values. 
+2. Repeate step 1 fro the *retrieveAccountLien* method but change the value of LienProcessingOption key value pair.
+3. Test using the Postman collection given in this repository, you may change the values of the Path variables to see them change in the response, the expected body contains a JSON text with the Path variables embedded into the values of the first lines. 
+4. Test using the Postman collection given in this repository, the expected body contains a JSON text with `CurrentAccountFacility` as the top most object in the *Get current account information* request and `AccountLien` as the first line in the *Get current lien account information* request. The rest of the key value pairs should consist of matching values. 
 
