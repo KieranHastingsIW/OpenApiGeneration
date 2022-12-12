@@ -17,7 +17,7 @@ A guide for creating an API using the OpenApi generator, using a OpenApi spec ya
 
 **Testing**
 
-> If you want to test the passing of the Path variables continue, if not skip to step ...........<
+If you want to test the passing of the Path variables continue, if not skip to step ...........
     1. in the `CurrentAccountApi.java` class locate the *retrieve* method, edit the contetnt of the exampleString variable to include the currentaccountid parameter.
     - these changes should make the start of the exampleString look like `"{ \"CurrentAccountFacility\" : { \"ProductInstanceReference\" : \"" + currentaccountid + "\",` instead of `"{ \"CurrentAccountFacility\" : { \"ProductInstanceReference\" : \"ProductInstanceReference\",`
 * To test the API has been set up properly use Postman to send request and view the responses.
