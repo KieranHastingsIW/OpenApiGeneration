@@ -35,6 +35,42 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get current lien account information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/BIAN-3/BIAN/CurrentAccount/11.0.0/CurrentAccount/:currentaccountid/AccountLien/:accountlienid/Retrieve",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BIAN-3",
+						"BIAN",
+						"CurrentAccount",
+						"11.0.0",
+						"CurrentAccount",
+						":currentaccountid",
+						"AccountLien",
+						":accountlienid",
+						"Retrieve"
+					],
+					"variable": [
+						{
+							"key": "currentaccountid",
+							"value": "caid"
+						},
+						{
+							"key": "accountlienid",
+							"value": "alid"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
