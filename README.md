@@ -16,7 +16,8 @@ A guide for creating an API using the OpenApi generator, using a OpenApi spec ya
 * The current API will respond to all request that are formatted correctly with the expected JSON body and a 501 Not Implemented status.
 
 **Testing**
-    > If you want to test the passing of the Path variables continue, if not skip to step ...........
+
+> If you want to test the passing of the Path variables continue, if not skip to step ...........
 * bob
 * To test the API has been set up properly use Postman to send request and view the responses.
     * A few test cases have been created and are included in this repository.
